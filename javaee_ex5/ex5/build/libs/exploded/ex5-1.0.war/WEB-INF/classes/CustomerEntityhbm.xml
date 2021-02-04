@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="cn.edu.zjut.po.Customer" table="customer" schema="hibernatedb">
+        <id name="customerId" column="customerID"/>
+        <property name="account" column="Account"/>
+        <property name="password" column="Password"/>
+        <property name="name" column="Name"/>
+        <property name="sex" column="Sex" type="java.lang.Integer"/>
+        <property name="birthday" column="Birthday"/>
+
+        <component name="contactInfo" class="cn.edu.zjut.po.ContactInfo">
+            <property name="phone" type="string">
+                <column name="Phone" length="20"/>
+            </property>
+            <property name="email" type="string">
+                <column name="Email" length="100"/>
+            </property>
+            <property name="address" type="string">
+                <column name="Address" length="200"/>
+            </property>
+            <property name="zipcode" type="string">
+                <column name="Zipcode" length="10"/>
+            </property>
+            <property name="fax" type="string">
+                <column name="Fax" length="20"/>
+            </property>
+        </component>
+    </class>
+</hibernate-mapping>

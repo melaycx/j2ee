@@ -1,0 +1,38 @@
+plugins {
+    id 'java'
+    id 'war'
+}
+
+group 'com.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    maven { url 'https://maven.aliyun.com/repository/public' }
+    maven { url 'https://maven.aliyun.com/repository/google' }
+    mavenCentral()
+}
+
+ext {
+    junitVersion = '5.7.0'
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    implementation 'javax.servlet:javax.servlet-api:4.0.1'
+    implementation 'javax.servlet.jsp:javax.servlet.jsp-api:2.3.3'
+    implementation 'org.apache.struts:struts2-core:2.5.25'
+    implementation 'org.apache.struts:struts2-dojo-plugin:2.3.37'
+    implementation 'commons-logging:commons-logging:1.2'
+    implementation 'org.apache.logging.log4j:log4j-core:2.14.0'
+    implementation 'mysql:mysql-connector-java:8.0.22'
+    compile 'org.hibernate:hibernate-core:5.4.22.Final'
+    compile group: 'org.apache.struts', name: 'struts2-spring-plugin', version: '2.5.17'
+    testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+}
+
+test {
+    useJUnitPlatform()
+}

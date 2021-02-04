@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="hibernatedb@localhost" uuid="cefa767f-b2af-4a10-b4c7-2516eab7ee4c">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/hibernatedb</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="dataSource" uuid="cadd3bfe-1e89-4f0e-9fcc-b509fa11a583">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>spring
+
+C:/Users/zml/javaee/ex8_hibernate/src/main/resources/applicationContext.xml</remarks>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/hibernatedb</jdbc-url>
+    </data-source>
+  </component>
+</project>

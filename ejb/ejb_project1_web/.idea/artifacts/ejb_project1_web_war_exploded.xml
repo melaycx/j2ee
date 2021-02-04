@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="ejb_project1_web:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/ejb_project1_web_war_exploded.war</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="ejb_project1_web/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ejb_project1_web" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="jboss-client" />
+          <element id="library" level="project" name="EJB-3.2.2" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="ejb_project1_web/ejb/EJB" />
+      <element id="artifact" artifact-name="ejb_project1_web:ejb exploded" />
+    </root>
+  </artifact>
+</component>
